@@ -16,7 +16,10 @@
 </script>
 
 <style lang="scss">
-    * {
+    @import './../public/css/bootstrap.min.css';
+    @import './../public/css/currencies.min.css';
+
+    html * {
         font-family: 'Work Sans', sans-serif;
     }
 

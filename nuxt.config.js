@@ -1,4 +1,9 @@
-export default  {
+const getFiles = require('./helpers/blog');
+
+module.exports =  {
+    serverMiddleware: [
+        '~/api/Post.js',
+    ],
     head: {
         meta: [
             { charset: 'utf-8' },
@@ -14,5 +19,25 @@ export default  {
         'public/css/bootstrap.min.css',
         'public/css/currencies.min.css',
     ],
-    modules: []
+
+    generate: {
+        // routes: () => getFiles('blog')
+        routes: [
+            '/blog/1',
+            '/blog/2',
+            '/blog/3',
+        ]
+    },
+
+    // build: {
+    //     /*
+    //     ** You can extend webpack config here
+    //     */
+    //     extend(config, ctx) {
+    //         config.module.rules.push({
+    //             test: /\.md$/,
+    //             use: ['raw-loader']
+    //         })
+    //     }
+    // }
 };

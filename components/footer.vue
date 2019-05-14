@@ -6,6 +6,9 @@
                     <NuxtLink to="/">
                         Przelicznik walut
                     </NuxtLink>
+                    <NuxtLink to="/list">
+                        Przelicznik walut
+                    </NuxtLink>
                 </li>
                 <li class="list-inline-item">
                     <NuxtLink to="/about">

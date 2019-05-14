@@ -3,7 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _8c0cd68e = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _10ad81be = () => interopDefault(import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */))
 const _4dd127e2 = () => interopDefault(import('../pages/author.vue' /* webpackChunkName: "pages/author" */))
+const _58b7a4a2 = () => interopDefault(import('../pages/list.vue' /* webpackChunkName: "pages/list" */))
+const _0f283546 = () => interopDefault(import('../pages/auth/login.vue' /* webpackChunkName: "pages/auth/login" */))
+const _d33ed454 = () => interopDefault(import('../pages/auth/register.vue' /* webpackChunkName: "pages/auth/register" */))
+const _216bfa12 = () => interopDefault(import('../pages/blog/_title.vue' /* webpackChunkName: "pages/blog/_title" */))
 const _4c9d2104 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -85,9 +90,29 @@ export function createRouter() {
       component: _8c0cd68e,
       name: "about"
     }, {
+      path: "/admin",
+      component: _10ad81be,
+      name: "admin"
+    }, {
       path: "/author",
       component: _4dd127e2,
       name: "author"
+    }, {
+      path: "/list",
+      component: _58b7a4a2,
+      name: "list"
+    }, {
+      path: "/auth/login",
+      component: _0f283546,
+      name: "auth-login"
+    }, {
+      path: "/auth/register",
+      component: _d33ed454,
+      name: "auth-register"
+    }, {
+      path: "/blog/:title?",
+      component: _216bfa12,
+      name: "blog-title"
     }, {
       path: "/",
       component: _4c9d2104,
